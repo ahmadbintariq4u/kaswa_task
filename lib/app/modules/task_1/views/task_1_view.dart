@@ -37,7 +37,7 @@ class Task1View extends GetView<Task1Controller> {
             ElevatedButton(
                     onPressed: () {
                       // Get.toNamed(Routes.BOOKING);
-                      Get.to(const BookedRooms());
+                      Get.to(() => const BookedRooms());
                     },
                     child: const Text("See Booked Rooms").p(kPadding))
                 .cornerRadius(kRaidus)
