@@ -1,0 +1,32 @@
+name: kaswa_task
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  csv: ^5.0.1
+  cupertino_icons: ^1.0.2
+  # excel: ^1.1.5
+  flutter:
+    sdk: flutter
+  flutter_datetime_picker: ^1.5.1
+  flutter_spinkit: ^5.1.0
+  get: 4.6.5
+  hive: ^2.2.3
+  http: ^0.13.5
+  intl: ^0.17.0
+  modal_bottom_sheet: ^2.1.2
+  spreadsheet_decoder: ^2.1.1
+  velocity_x: ^3.6.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
