@@ -34,7 +34,7 @@ class BookingController extends GetxController {
     Get.bottomSheet(
       Container(
         color: Colors.white,
-        height: Get.height * 0.52,
+        height: 1400,
         child: Column(
           // crossAxisAlignment: CrossAxisAlignment.,
           children: [

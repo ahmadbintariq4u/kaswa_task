@@ -7,6 +7,7 @@ import 'package:velocity_x/velocity_x.dart';
 
 import '../../../routes/app_pages.dart';
 import '../controllers/task_1_controller.dart';
+import 'booked_view.dart';
 
 class Task1View extends GetView<Task1Controller> {
   const Task1View({Key? key}) : super(key: key);
@@ -30,6 +31,15 @@ class Task1View extends GetView<Task1Controller> {
                       // Get.toNamed(Routes.BOOKING);
                     },
                     child: const Text("Find Now").p(kPadding))
+                .cornerRadius(kRaidus)
+                .pSymmetric(h: kPadding + 4),
+            kHeight,
+            ElevatedButton(
+                    onPressed: () {
+                      // Get.toNamed(Routes.BOOKING);
+                      Get.to(const BookedRooms());
+                    },
+                    child: const Text("See Booked Rooms").p(kPadding))
                 .cornerRadius(kRaidus)
                 .pSymmetric(h: kPadding + 4),
             const Spacer(),

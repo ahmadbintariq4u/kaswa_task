@@ -58,6 +58,6 @@ class BookingView extends GetView<BookingController> {
               },
             ),
           ),
-        ]));
+        ]).p(kPadding));
   }
 }
