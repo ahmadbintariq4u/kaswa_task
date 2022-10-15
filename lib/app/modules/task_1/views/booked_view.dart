@@ -15,13 +15,13 @@ class BookedRooms extends GetView<Task1Controller> {
         title: const Text('Booked Rooms'),
         centerTitle: true,
       ),
-      body: controller.booked_rooms.isEmpty
+      body: controller.bookedRooms.isEmpty
           ? const Text("No Booked Scheduled").text.bold.makeCentered()
           : ListView.builder(
-              itemCount: controller.booked_rooms.length,
+              itemCount: controller.bookedRooms.length,
               itemBuilder: (BuildContext context, int index) {
                 final tokens =
-                    controller.booked_rooms[index].slot.toString().split('-');
+                    controller.bookedRooms[index].slot.toString().split('-');
                 return Card(
                   child: Row(
                     children: [
@@ -35,17 +35,17 @@ class BookedRooms extends GetView<Task1Controller> {
                       Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(controller.booked_rooms[index].teacherID!)
+                            Text(controller.bookedRooms[index].teacherID!)
                                 .text
                                 .bold
                                 .make(),
                             kHeight,
-                            Text("${controller.booked_rooms[index].date} : ${controller.booked_rooms[index].day}")
+                            Text("${controller.bookedRooms[index].date} : ${controller.bookedRooms[index].day}")
                                 .text
                                 .bold
                                 .make(),
                             kHeight,
-                            Text("${controller.booked_rooms[index].room}")
+                            Text("${controller.bookedRooms[index].room}")
                                 .text
                                 .bold
                                 .make(),

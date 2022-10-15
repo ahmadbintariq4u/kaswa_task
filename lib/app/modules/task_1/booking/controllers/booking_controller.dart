@@ -143,7 +143,7 @@ class BookingController extends GetxController {
                   booking.teacherID = arguments['teacher'];
                   booking.day = DateFormat.EEEE().format(selectedDate);
 
-                  Get.find<Task1Controller>().booked_rooms.add(booking);
+                  Get.find<Task1Controller>().bookedRooms.add(booking);
                   Get.find<Task1Controller>()
                       .freerooms
                       .remove(selectedRooms.value);
