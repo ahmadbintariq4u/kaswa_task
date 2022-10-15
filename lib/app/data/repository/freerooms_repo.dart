@@ -1,8 +1,8 @@
 import '../providers/freerooms_provider.dart';
 
 class FreeroomsRepository {
-  List<String> getFreeRooms() {
+  Future<List<String>> getFreeRooms() async {
     final freeroomsProvider = FreeroomsProvider();
-    return freeroomsProvider.getFreeRooms();
+    return await freeroomsProvider.getFreeRooms();
   }
 }

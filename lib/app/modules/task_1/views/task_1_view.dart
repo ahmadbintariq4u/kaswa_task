@@ -46,8 +46,10 @@ class Task1View extends GetView<Task1Controller> {
             const Text(
                     "All the data is for now dummy, with the help of provider we can get the data from the server")
                 .text
+                .red900
+                .bold
                 .make()
-                .p(kPadding)
+                .p(kPadding),
           ],
         ));
   }

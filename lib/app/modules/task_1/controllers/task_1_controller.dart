@@ -23,10 +23,10 @@ class Task1Controller extends GetxController {
   final timetableRepository = TimetableRepository();
 
   @override
-  void onInit() {
+  Future<void> onInit() async {
     timeController.text = DateFormat.jm().format(DateTime.now());
 
-    freerooms.value = freeroomsRepository.getFreeRooms();
+    freerooms.value = await freeroomsRepository.getFreeRooms();
     teachers.value = timetableRepository.getTeachers();
 
     selectedTeacher.value = teachers[0];
